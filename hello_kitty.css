@@ -1,0 +1,74 @@
+body {
+  background-image: url('C:\Users\test\Downloads\hello-kitty-logo-black-and-white-removebg-preview (1).png');
+  background-repeat: repeat;
+  background-color: #ff3399; /* Pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove default margin */
+  font-family: 'HelloKitty', Arial, sans-serif; /* Use Hello Kitty font */
+}
+
+.container {
+  text-align: center;
+}
+
+.hello-kitty-header {
+  margin-bottom: 20px;
+}
+
+.shape {
+  position: relative; /* Set position to relative */
+  width: 400px;
+  height: auto; /* Adjusted to fit content */
+  background-color: #f0f0f0; /* Light gray */
+  border-radius: 20px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Increased padding */
+}
+
+#songTitle {
+  position: absolute; /* Set position to absolute */
+  top: 10px; /* Adjust top position */
+  left: 10px; /* Adjust left position */
+  font-size: 20px; /* Adjusted font size for song title */
+}
+
+#artistName {
+  position: absolute; /* Set position to absolute */
+  top: 35px; /* Adjust top position */
+  left: 10px; /* Adjust left position */
+  font-size: 14px; /* Adjusted font size for artist name */
+  color: #666; /* Gray color for artist name */
+}
+
+#lyricDisplay {
+  text-align: center;
+  font-size: 16px; /* Adjusted font size for lyric */
+  padding-top: 60px; /* Added padding to prevent overlapping */
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #183d91; /* Updated button color to #183d91 */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #043366; /* Darker shade of TV Girl blue color */
+}
+
+.hello-kitty-header img {
+  width: 150px; /* Adjust the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+}

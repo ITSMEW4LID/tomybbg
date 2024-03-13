@@ -1,0 +1,57 @@
+body {
+  background-color: #ff3399; /* Pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.shape {
+  width: 400px;
+  height: auto; /* Adjusted to fit content */
+  background-color: #f0f0f0; /* Light gray */
+  position: relative;
+  border-radius: 20px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Increased padding */
+}
+
+#lyricDisplay {
+  text-align: center;
+}
+
+#lyricDisplay h2 {
+  font-size: 24px; /* Larger font size for song title */
+}
+
+#lyricDisplay p {
+  font-size: 18px; /* Adjusted font size for lyric */
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+@font-face {
+  font-family: 'SpotifyFont';
+  src: url('C:\Users\test\Documents\lyrics\GothamBold.ttf') format('woff2'),
+       url('C:\Users\test\Documents\lyrics\GothamMedium.ttf') format('woff');
+  /* Add more font formats if necessary */
+}
+#lyricDisplay h2,
+#lyricDisplay p {
+  font-family: 'SpotifyFont', Arial, sans-serif; /* Use Spotify font or fallback to Arial */
+}

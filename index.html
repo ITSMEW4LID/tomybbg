@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TV Girl Lyric Generator</title>
+<link rel="stylesheet" href="hello_kitty.css"> <!-- Link to Hello Kitty CSS -->
+</head>
+<body>
+  <div class="container">
+    <div class="hello-kitty-header">
+      <img src="C:\Users\test\Documents\lyrics\hello-kitty-logo-black-and-white-removebg-preview (1).png" alt="Hello Kitty Logo">
+    </div>
+    <div class="shape">
+      <h2 id="songTitle"></h2>
+      <p id="artistName"></p>
+      <div id="lyricDisplay">
+      </div>
+    </div>
+    <button id="generateButton" onclick="generateLyric()">Generate Lyric</button>
+  </div>
+
+  <script>
+  const tvGirlLyrics = [
+  { song: 'Lovers Rock', artist: 'TV Girl', lyric: 'It’s like I’m always 17, never getting off the scene, just living out my night dreams.' },
+  { song: 'Birds Don\'t Sing', artist: 'TV Girl', lyric: 'I\'m just a bad actor, stuck with a shitty script, trying to get rich.' },
+  { song: 'The Blonde', artist: 'TV Girl', lyric: 'In your heart, you’re an artist, but your father won’t applaud it, so you quit and you pretend to know your role.' },
+  { song: 'Heaven Is a Bedroom', artist: 'TV Girl', lyric: 'Oh, heaven is a bedroom with the covers pulled up and your friends all around, and you’re making love.' },
+  { song: 'Pantyhose', artist: 'TV Girl', lyric: 'I’m the talk of the town, yeah, I’m everybody’s brother, but I’m not who they want when they\'re under the covers.' },
+  { song: 'Song About Me', artist: 'TV Girl', lyric: 'I got a problem with drinking, I got a problem with drugs, I got a problem with cheating, and I got a problem with love.' },
+  { song: 'The Getaway', artist: 'TV Girl', lyric: 'The only problem is I’m broke, and the only getaway is broke.' },
+  { song: 'She Smokes in Bed', artist: 'TV Girl', lyric: 'She smokes in bed, she smokes in bed, she smokes in bed, I can’t get her out of my head.' },
+  { song: 'Cigarettes Out the Window', artist: 'TV Girl', lyric: 'I wanna break up, but I’m too afraid to be alone, so I’m just gonna wait here in my bed \'til she comes home.' },
+  { song: 'Not Allowed', artist: 'TV Girl', lyric: 'I’m not allowed to love you, but I’m not allowed to leave, so I’ll just keep drinking in your car while you’re asleep.' },
+  { song: 'Forever and Ever', artist: 'TV Girl', lyric: 'And I don’t know where I’m going, but I don’t wanna go home, so I’m gonna keep on driving while the record plays on.' },
+  { song: 'The Blonde (Reprise)', artist: 'TV Girl', lyric: 'I’m just a bad actor, stuck with a shitty script, trying to get rich.' },
+  { song: 'High Waisted Shorts', artist: 'TV Girl', lyric: 'She\'s got high waisted shorts, she\'s got fringe on her purse, she\'s got neon green glasses and her hair in a bun.' },
+  { song: 'Lovers Rock Part II', artist: 'TV Girl', lyric: 'She\'s a Mona Lisa, with a new tattoo, she\'s the kind of girl who makes you choose, she\'s a love enthusiast with nothing to lose.' },
+  { song: 'Your Love', artist: 'TV Girl', lyric: 'Your love, your love, your love is always on my mind, and I can\'t get enough, can\'t get enough, can\'t get enough this time.' },
+  { song: 'Palm Isle', artist: 'TV Girl', lyric: 'In my Palm Isle paradise, I\'m getting high off of your eyes, can you hear the ocean singing?' },
+  { song: 'I Wonder Who She\'s Kissing Now', artist: 'TV Girl', lyric: 'I wonder who she\'s kissing now, I wonder if she\'s happy, somehow I doubt it, but I don\'t wanna know.' },
+  { song: 'Lover\'s Rock (Reprise)', artist: 'TV Girl', lyric: 'But when the record stops, I still feel the same, like a stone-cold fox in the pouring rain.' },
+  { song: 'Lovers Rock (Part III)', artist: 'TV Girl', lyric: 'She\'s got the beat and the rhythm in her, she\'s got me turning to a believer, she\'s got the moves and she knows how to use them.' },
+  { song: 'Lovers Rock (Part IV)', artist: 'TV Girl', lyric: 'She\'s got me dancing in the moonlight, she\'s got me feeling like a fool, she\'s got me running in circles, she\'s got me breaking all the rules.' },
+  { song: 'My Girlfriend', artist: 'TV Girl', lyric: 'My girlfriend, she\'s got a boyfriend, but she still calls me up at night, says she wants to see me, says she wants to hold me tight.' },
+  { song: 'The Art of Paris', artist: 'TV Girl', lyric: 'The art of Paris, the art of love, it\'s all the same, when push comes to shove, we\'re just a couple of kids, trying to make it through the night.' },
+  { song: 'For You', artist: 'TV Girl', lyric: 'I\'ve got a song for you, but I don\'t know if you\'ll hear it, I\'ve got a love for you, but I don\'t know if you\'ll feel it.' },
+  { song: 'It Evaporates', artist: 'TV Girl', lyric: 'It evaporates, like a dream in the morning light, it evaporates, like the fog on a summer night.' },
+  { song: 'Miracle Mile', artist: 'TV Girl', lyric: 'We\'re driving down Miracle Mile, with the radio on and the windows down, just trying to forget about everything for a while.' },
+  { song: 'Lover\'s Rock (Part V)', artist: 'TV Girl', lyric: 'She\'s got me feeling like I\'m floating, she\'s got me feeling like I\'m flying, she\'s got me feeling like I\'m falling, she\'s got me feeling like I\'m dying.' }
+  ];
+
+  function generateLyric() {
+    const randomLyric = tvGirlLyrics[Math.floor(Math.random() * tvGirlLyrics.length)];
+    document.getElementById('songTitle').textContent = randomLyric.song;
+    document.getElementById('artistName').textContent = randomLyric.artist;
+    document.getElementById('lyricDisplay').textContent = randomLyric.lyric;
+  }
+  </script>
+</body>
+</html>
